@@ -66,7 +66,14 @@ public class Game extends Canvas implements Runnable{
         par3.setRadius(10);
         par3.setParentHandler(handler);
         par3.setParentContainer(container);
-        handler.addObject(par2);
+        handler.addObject(par3);
+
+        Particle par4 = new Particle(2*WIDTH/5,3*HEIGHT/5,53, handler,ID.Particle);
+        par4.setVel(10);
+        par4.setRadius(10);
+        par4.setParentHandler(handler);
+        par4.setParentContainer(container);
+        handler.addObject(par4);
 
         while(isRunning){
             long now = System.nanoTime();
